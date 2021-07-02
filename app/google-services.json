@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "230352231712",
+    "firebase_url": "https://medideck-38023-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "medideck-38023",
+    "storage_bucket": "medideck-38023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230352231712:android:98ff0db48cee355dd64b45",
+        "android_client_info": {
+          "package_name": "com.example.medideck"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230352231712-ftvvq6lbll4pslfsrcmcb6d94ftfpf6d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl1qn74hxMFo4i2TzYa7lLiiR69qOkYPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230352231712-ftvvq6lbll4pslfsrcmcb6d94ftfpf6d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

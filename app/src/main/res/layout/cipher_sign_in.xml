@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222831">
+
+    <TextView
+        android:id="@+id/get_on_boar"
+        android:layout_width="240dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="@string/get_on_boar"
+        android:textAppearance="@style/get_on_boar"
+        app:layout_constraintBottom_toTopOf="@+id/name_si_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@id/getin_logo"
+        android:layout_width="150dp"
+        android:layout_height="167dp"
+        android:layout_marginBottom="556dp"
+
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/name_si"
+        android:layout_width="132dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="@string/name"
+        android:textAppearance="@style/name_si"
+        app:layout_constraintBottom_toTopOf="@+id/number_si"
+        app:layout_constraintEnd_toStartOf="@+id/name_si_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name_si_edittext"
+        android:layout_width="240dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:background="@drawable/input_profile_draw"
+        android:elevation="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/number_si_edittext"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/number_si"
+        android:layout_width="132dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="@string/number"
+        android:textAppearance="@style/name_si"
+        app:layout_constraintBottom_toTopOf="@+id/age_si"
+        app:layout_constraintEnd_toStartOf="@+id/number_si_edittext"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/number_si_edittext"
+        android:layout_width="240dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:background="@drawable/input_profile_draw"
+        android:elevation="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/age_si_edittext"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/age_si"
+        android:layout_width="132dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="@string/age"
+        android:textAppearance="@style/name_si"
+        app:layout_constraintBottom_toTopOf="@+id/email_si"
+        app:layout_constraintEnd_toStartOf="@+id/age_si_edittext"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/age_si_edittext"
+        android:layout_width="240dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:background="@drawable/input_profile_draw"
+        android:elevation="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/email_si_edittext"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        android:id="@+id/email_si"
+        android:layout_width="132dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="@string/email"
+        android:textAppearance="@style/name_si"
+        app:layout_constraintBottom_toTopOf="@+id/password_si"
+        app:layout_constraintEnd_toStartOf="@+id/email_si_edittext"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/email_si_edittext"
+        android:layout_width="240dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:background="@drawable/input_profile_draw"
+        android:elevation="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/password_si_edittext"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/password_si"
+        android:layout_width="132dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="@string/password"
+        android:textAppearance="@style/name_si"
+        app:layout_constraintBottom_toTopOf="@+id/c_password_si"
+        app:layout_constraintEnd_toStartOf="@+id/password_si_edittext"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/password_si_edittext"
+        android:layout_width="240dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:background="@drawable/input_profile_draw"
+        android:elevation="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/c_password_si_edittext"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/c_password_si"
+        android:layout_width="132dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="86dp"
+        android:gravity="center"
+        android:text="@string/c_password"
+        android:textAppearance="@style/name_si"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/c_password_si_edittext"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/c_password_si_edittext"
+        android:layout_width="240dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="86dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:background="@drawable/input_profile_draw"
+        android:elevation="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_round"
+        android:text="Next"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.998" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
