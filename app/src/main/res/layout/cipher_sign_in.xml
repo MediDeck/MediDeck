@@ -151,53 +151,25 @@
         android:layout_height="65dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="7dp"
-        android:layout_marginBottom="15dp"
         android:gravity="center"
         android:text="@string/password"
         android:textAppearance="@style/name_si"
-        app:layout_constraintBottom_toTopOf="@+id/c_password_si"
         app:layout_constraintEnd_toStartOf="@+id/password_si_edittext"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="500dp" />
 
     <EditText
         android:id="@+id/password_si_edittext"
         android:layout_width="240dp"
         android:layout_height="65dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="15dp"
-        android:textColor="@color/white"
-        android:textAlignment="center"
         android:background="@drawable/input_profile_draw"
+        android:inputType="textPassword"
         android:elevation="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/c_password_si_edittext"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/c_password_si"
-        android:layout_width="132dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="7dp"
-        android:layout_marginBottom="86dp"
-        android:gravity="center"
-        android:text="@string/c_password"
-        android:textAppearance="@style/name_si"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/c_password_si_edittext"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/c_password_si_edittext"
-        android:layout_width="240dp"
-        android:layout_height="65dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="86dp"
-        android:textColor="@color/white"
         android:textAlignment="center"
-        android:background="@drawable/input_profile_draw"
-        android:elevation="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="500dp" />
 
     <Button
         android:id="@+id/signup_button"
@@ -211,6 +183,6 @@
         app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.998" />
+        app:layout_constraintVertical_bias="0.906" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
