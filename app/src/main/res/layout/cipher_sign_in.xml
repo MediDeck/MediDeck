@@ -151,25 +151,28 @@
         android:layout_height="65dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="7dp"
+        android:layout_marginBottom="156dp"
         android:gravity="center"
         android:text="@string/password"
         android:textAppearance="@style/name_si"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/password_si_edittext"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="500dp" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/password_si_edittext"
         android:layout_width="240dp"
         android:layout_height="65dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="156dp"
         android:background="@drawable/input_profile_draw"
-        android:inputType="textPassword"
         android:elevation="16dp"
+        android:inputType="textPassword"
         android:textAlignment="center"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="500dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/signup_button"
