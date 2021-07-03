@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -41,9 +42,36 @@ public class ciphers_sign_in extends AppCompatActivity {
                 String age1 = age.getText().toString();
                 String email1 = email.getText().toString();
                 String pass1 = pass.getText().toString();
-                UserHelperClass uhc = new UserHelperClass(Name1,age1,number1,pass1,email1);
-                reference.setValue(uhc);
+                if(email1.isEmpty()){
+                    email.setError("Please enter email id");
+                    email.requestFocus();
+                }
+                else if(pass1.isEmpty()){
+                    pass.setError("Please enter your password");
+                    pass.requestFocus();
+                }
+
+                else if(number1.isEmpty()){
+                    pass.setError("Please enter your Phone Number");
+                    pass.requestFocus();
+                }
+
+                else if(Name1.isEmpty()){
+                    pass.setError("Please enter your Full Name");
+                    pass.requestFocus();
+                }
+
+                else if(age1.isEmpty()){
+                    pass.setError("Please enter your Age");
+                    pass.requestFocus();
+                }
+
+                else{
+
+                UserHelperClass uhc = new UserHelperClass(Name1,number1,age1,email1,pass1);
+                reference.child(number1).setValue(uhc);
                 openDocorUser();
+                }
             }
         });
     }
