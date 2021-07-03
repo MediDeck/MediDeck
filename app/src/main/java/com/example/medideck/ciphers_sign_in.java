@@ -52,18 +52,18 @@ public class ciphers_sign_in extends AppCompatActivity {
                 }
 
                 else if(number1.isEmpty()){
-                    pass.setError("Please enter your Phone Number");
-                    pass.requestFocus();
+                    number.setError("Please enter your Phone Number");
+                    number.requestFocus();
                 }
 
                 else if(Name1.isEmpty()){
-                    pass.setError("Please enter your Full Name");
-                    pass.requestFocus();
+                    Name.setError("Please enter your Full Name");
+                    Name.requestFocus();
                 }
 
                 else if(age1.isEmpty()){
-                    pass.setError("Please enter your Age");
-                    pass.requestFocus();
+                    age.setError("Please enter your Age");
+                    age.requestFocus();
                 }
 
                 else{
