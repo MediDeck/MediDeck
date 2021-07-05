@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MediDeck">
-        <activity android:name=".ciphers_sign_in"></activity>
-        <activity android:name=".doc_or_user"></activity>
-        <activity android:name=".user_profile"></activity>
-        <activity android:name=".patient_home_page"></activity>
-        <activity android:name=".corona"></activity>
+        <activity android:name=".LabTest"></activity>
+        <activity android:name=".ciphers_sign_in" />
+        <activity android:name=".doc_or_user" />
+        <activity android:name=".user_profile" />
+        <activity android:name=".patient_home_page" />
+        <activity android:name=".corona" />
         <activity android:name=".login_act">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

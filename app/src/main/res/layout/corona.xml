@@ -9,60 +9,76 @@
     android:backgroundTint="#222831"
     tools:context=".patient_home_page">
 
+    <ImageView
+        android:id="@+id/corona_cases"
+        android:layout_width="377dp"
+        android:layout_height="291dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55"
+        app:srcCompat="@drawable/covid_cases" />
 
-    <Button
-        android:id="@+id/covid_hos"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_alignParentTop="false"
-        android:layout_marginBottom="100dp"
-        android:background="@drawable/edit_round"
-        android:drawableRight="@drawable/covid19_hospitals"
-        android:text="@string/covid_19_ca"
-        android:textAppearance="@style/covid_19_ca"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="What do you need?"
+        android:textColor="#BFD7E2"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/cowin_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/corona_lab"
         android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_alignParentTop="false"
-        android:layout_marginBottom="32dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/edit_round"
-        android:drawableRight="@drawable/rtcpr_logo"
-        android:text="@string/laboratorie"
-        android:textAppearance="@style/covid_19_ca"
-        app:layout_constraintBottom_toTopOf="@+id/covid_hos"
+        android:drawableRight="@drawable/lab_corona_icon"
+        android:text="Laboratories  with Covid-19
+testing facility"
+        android:textColor="#00ADB5"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/corona_hemkunt_f"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/corona_hemkunt_f"
+        android:layout_width="300dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/edit_round"
+        android:drawableRight="@drawable/hemkunt_foundation_icon"
+        android:text="NGO providing relief in
+the times of Covid"
+        android:textColor="#00ADB5"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/cowin_button"
         android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_alignParentTop="false"
-        android:layout_marginBottom="32dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/edit_round"
         android:drawableRight="@drawable/cowin_logo"
-        android:text="Vaccine"
-        android:textAppearance="@style/covid_19_ca"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        android:text="Vaccine Portal"
+        android:textColor="#00ADB5"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/corona_lab"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/what_need"
-        android:layout_width="250dp"
-        android:layout_height="35dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginBottom="32dp"
-        android:gravity="center_horizontal|top"
-        android:text="@string/what_do_you"
-        android:textAppearance="@style/name"
-        app:layout_constraintBottom_toTopOf="@+id/cowin_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-    />
 </androidx.constraintlayout.widget.ConstraintLayout>

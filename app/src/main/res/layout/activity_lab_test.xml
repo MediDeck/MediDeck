@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222831"
+    tools:context=".LabTest">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lab Test"
+        android:textColor="#BFD7E2"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/thp_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.204"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.464" />
+
+    <Button
+        android:id="@+id/thp_button"
+        android:layout_width="332dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/labtestbuttonbgcolor"
+        android:text="Thyroid Profile (3 test)(T3, T4, TSH) "
+        android:textColor="#00ADB5"
+        app:layout_constraintBottom_toTopOf="@+id/ltp_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bhs_button"
+        android:layout_width="332dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/labtestbuttonbgcolor"
+        android:text="Basic Health Screen (31 test) (Thyroid Profile + Kidney Profile + Liver Profile + Lipid Profile
++ Iron Studies + Fasting Blood Sugar)
+"
+        android:textColor="#00ADB5"
+        app:layout_constraintBottom_toTopOf="@+id/mp_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/kp_button"
+        android:layout_width="332dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/labtestbuttonbgcolor"
+        android:text="Kidney Profile (5 test)
+(Calcium + Uric Acid + Urea + Creatinine + BUN/Screat)
+"
+        android:textColor="#00ADB5"
+        app:layout_constraintBottom_toTopOf="@+id/bhs_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ltp_button"
+        android:layout_width="332dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/labtestbuttonbgcolor"
+        android:text="Lipid Profile (7 test)
+(Cholesterol +HDL +LDL + Triglyceride +VLDL +Chol + LDL)
+"
+        android:textColor="#00ADB5"
+        app:layout_constraintBottom_toTopOf="@+id/kp_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/mp_button"
+        android:layout_width="332dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/labtestbuttonbgcolor"
+        android:text="Metabolic Profile (60 test)
+(Thyroid Profile + Kidney Profile + Liver Profile + Lipid Profile
++ Iron Studies + Sugar Memory - HBA1c + cbc. hB Plt)
+"
+        android:textColor="#00ADB5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="166dp"
+        android:layout_height="209dp"
+        app:layout_constraintBottom_toTopOf="@+id/thp_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/labtest" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
