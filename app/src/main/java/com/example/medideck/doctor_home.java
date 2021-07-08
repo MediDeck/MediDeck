@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -78,10 +79,14 @@ public class doctor_home extends AppCompatActivity {
         appointments.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(profileSaveDB.equals("false")){
+                    Toast.makeText(doctor_home.this, "Please complete your Profile", Toast.LENGTH_SHORT).show();
+
+                }else{
                 Intent appo = new Intent(getApplicationContext(), doc_appointments.class);
                 appo.putExtra("key", emailCheck);
                 appo.putExtra("namedoc",namefromDB);
-                startActivity(appo);
+                startActivity(appo);}
             }
         });
 
