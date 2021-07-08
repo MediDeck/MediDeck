@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 import android.widget.ImageButton;
 
@@ -26,7 +27,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class ciphers_sign_in extends AppCompatActivity {
     private Button nextpage;
     EditText Name, number, age, city ,email, pass;
-
+    RadioGroup radioGroup;
     RadioButton radioDocButton,radioPatButton;
     FirebaseDatabase rootnode;
     DatabaseReference reference;
@@ -37,9 +38,12 @@ public class ciphers_sign_in extends AppCompatActivity {
     public String type1;
     public String Emailkey;
     public String profileSave = "false";
+    public int count = 0;
+    public int countR = 0;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cipher_sign_in);
+        radioGroup = findViewById(R.id.radioGroup);
         radioDocButton = (RadioButton) findViewById(R.id.doctor_radio);
         radioPatButton = (RadioButton) findViewById(R.id.patient_radio);
         Name = findViewById(R.id.name_si_edittext);
@@ -83,25 +87,42 @@ public class ciphers_sign_in extends AppCompatActivity {
                 }
 
 
-                if (email1.isEmpty()) {
-                    email.setError("Please enter email id");
-                    email.requestFocus();
-                } else if (pass1.isEmpty()) {
-                    pass.setError("Please enter your password");
-                    pass.requestFocus();
-                } else if (number1.isEmpty()) {
-                    number.setError("Please enter your Phone Number");
-                    number.requestFocus();
-                } else if (Name1.isEmpty()) {
+                if(Name1.isEmpty()) {
                     Name.setError("Please enter your Full Name");
                     Name.requestFocus();
-                } else if (age1.isEmpty()) {
+                }else if (number1.isEmpty()) {
+                    number.setError("Please enter your Phone Number");
+                    number.requestFocus();
+                }else if (number1.length()!=10) {
+                    number.setError("Please check your Phone Number");
+                    number.requestFocus();
+                }else if (age1.isEmpty()) {
                     age.setError("Please enter your Age");
                     age.requestFocus();
-                } else if (city1.isEmpty()) {
+                }else if (city1.isEmpty()) {
                     city.setError("Please enter your City");
+                    count=0;
                     city.requestFocus();
-                } else {
+                }else if ((city1.toLowerCase().trim().equals("vapi") || city1.toLowerCase().trim().equals("bareilly"))&&count<=0){
+                    count++;
+                }else if (count == 0){
+                    city.setError("Please enter Vapi or Bareilly");
+                    city.requestFocus();
+                }else if (email1.isEmpty()) {
+                    email.setError("Please enter email id");
+                    email.requestFocus();
+                }else if (pass1.isEmpty()) {
+                    pass.setError("Please enter your password");
+                    pass.requestFocus();
+                }else if (pass1.length()<8) {
+                    pass.setError("Password should be more than 8 characters");
+                    pass.requestFocus();
+                }else if ((radioPatButton.isChecked() || radioDocButton.isChecked())&&countR<=0){
+                    countR++;
+                }else if (countR == 0){
+                    Toast.makeText(ciphers_sign_in.this, "please select a either Patient or Doctor", Toast.LENGTH_SHORT).show();
+                    radioGroup.requestFocus();
+                }else {
 
                     mAuth.createUserWithEmailAndPassword(email1,pass1).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
