@@ -35,6 +35,7 @@ public class login_act extends AppCompatActivity {
     EditText  emailEditText, passwordEditText;
     public String emailCheck;
     public String typefromDb;
+    public String Userpass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,8 +60,9 @@ public class login_act extends AppCompatActivity {
                         if(dataSnapshot.exists()) {
                             typefromDb = dataSnapshot.child(emailCheck).child("type1").getValue(String.class);
                             typefromDb = typefromDb.trim();
+                            Userpass = dataSnapshot.child(emailCheck).child("pass1").getValue(String.class);
                         }else{
-                            System.out.print("i am noob");
+                            Toast.makeText(login_act.this, "User does not exist!!", Toast.LENGTH_SHORT).show();
                         }
                     }
 
@@ -75,8 +77,11 @@ public class login_act extends AppCompatActivity {
                 if (email.isEmpty()) {
                     emailEditText.setError("Please enter email id");
                     emailEditText.requestFocus();
-                } else if (pass.isEmpty()) {
+                }else if (pass.isEmpty()) {
                     passwordEditText.setError("Please enter your password");
+                    passwordEditText.requestFocus();
+                }else if (!pass.equals(Userpass)) {
+                    passwordEditText.setError("Please enter correct password");
                     passwordEditText.requestFocus();
                 }else{
                     mAuth.signInWithEmailAndPassword(email,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
