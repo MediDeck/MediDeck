@@ -9,9 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MediDeck">
-        <activity android:name=".LabTest"></activity>
+        <activity android:name=".doc_appointments" />
+        <activity android:name=".doctor_booking" />
+        <activity android:name=".doc_profile" />
+        <activity android:name=".doctor_home" />
+        <activity android:name=".LabTest" />
+        <activity android:name=".appointment_book" />
+        <activity android:name=".book_vapi" />
+        <activity android:name=".choose_city" />
         <activity android:name=".ciphers_sign_in" />
-        <activity android:name=".doc_or_user" />
         <activity android:name=".user_profile" />
         <activity android:name=".patient_home_page" />
         <activity android:name=".corona" />

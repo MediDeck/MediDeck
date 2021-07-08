@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#222831"
     android:backgroundTint="#222831"
-    tools:context=".patient_home_page">
+    tools:context=".corona">
 
     <ImageView
         android:id="@+id/corona_cases"
@@ -40,7 +40,7 @@
         android:layout_height="73dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/edit_round"
-        android:drawableRight="@drawable/lab_corona_icon"
+        android:drawableRight="@drawable/labtest"
         android:text="Laboratories  with Covid-19
 testing facility"
         android:textColor="#00ADB5"

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/up_1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".user_profile"
-    android:background="#222831">
-
+    android:background="#222831"
+    tools:context=".doc_profile">
     <LinearLayout
         android:id="@+id/up_layout"
         android:layout_width="match_parent"
@@ -14,7 +13,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/name_up"
+            android:id="@+id/name_dp"
             android:layout_width="123dp"
             android:layout_height="32dp"
             android:layout_marginLeft="33dp"
@@ -24,7 +23,7 @@
             android:textAppearance="@style/name" />
 
         <EditText
-            android:id="@+id/name_up_edittext"
+            android:id="@+id/name_dp_edittext"
             android:layout_width="259dp"
             android:layout_height="60dp"
             android:layout_marginLeft="33dp"
@@ -33,17 +32,17 @@
             android:elevation="16dp" />
 
         <TextView
-            android:id="@+id/number_up"
+            android:id="@+id/hospital_dp"
             android:layout_width="123dp"
             android:layout_height="32dp"
             android:layout_marginLeft="33dp"
             android:layout_marginTop="20dp"
             android:gravity="center_horizontal|left"
-            android:text="@string/number"
+            android:text="Hospital"
             android:textAppearance="@style/name" />
 
         <EditText
-            android:id="@+id/number_up_edittext"
+            android:id="@+id/hospital_dp_edittext"
             android:layout_width="259dp"
             android:layout_height="60dp"
             android:layout_marginLeft="33dp"
@@ -52,17 +51,37 @@
             android:elevation="16dp" />
 
         <TextView
-            android:id="@+id/age_up"
+            android:id="@+id/charges_dp"
             android:layout_width="123dp"
             android:layout_height="32dp"
             android:layout_marginLeft="33dp"
             android:layout_marginTop="20dp"
             android:gravity="center_horizontal|left"
-            android:text="@string/age"
+            android:text="Charges"
             android:textAppearance="@style/name" />
 
         <EditText
-            android:id="@+id/age_up_edittext"
+            android:id="@+id/charges_dp_edittext"
+            android:layout_width="259dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/input_profile_draw"
+            android:elevation="16dp"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/address_dp"
+            android:layout_width="123dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal|left"
+            android:text="City"
+            android:textAppearance="@style/name" />
+
+        <EditText
+            android:id="@+id/address_dp_edittext"
             android:layout_width="259dp"
             android:layout_height="60dp"
             android:layout_marginLeft="33dp"
@@ -71,17 +90,17 @@
             android:elevation="16dp" />
 
         <TextView
-            android:id="@+id/address_up"
-            android:layout_width="123dp"
+            android:id="@+id/daysav_dp"
+            android:layout_width="200dp"
             android:layout_height="32dp"
             android:layout_marginLeft="33dp"
             android:layout_marginTop="20dp"
             android:gravity="center_horizontal|left"
-            android:text="@string/address"
+            android:text="Days Available"
             android:textAppearance="@style/name" />
 
         <EditText
-            android:id="@+id/address_up_edittext"
+            android:id="@+id/daysav_dp_edittext"
             android:layout_width="259dp"
             android:layout_height="60dp"
             android:layout_marginLeft="33dp"
@@ -90,17 +109,17 @@
             android:elevation="16dp" />
 
         <TextView
-            android:id="@+id/bloodgroup_up"
+            android:id="@+id/speciality_dp"
             android:layout_width="123dp"
             android:layout_height="32dp"
             android:layout_marginLeft="33dp"
             android:layout_marginTop="20dp"
             android:gravity="center_horizontal|left"
-            android:text="@string/bloodgroup"
+            android:text="Speciality"
             android:textAppearance="@style/name" />
 
         <EditText
-            android:id="@+id/bloodgroup_up_edittext"
+            android:id="@+id/speciality_dp_edittext"
             android:layout_width="259dp"
             android:layout_height="60dp"
             android:layout_marginLeft="33dp"
@@ -109,17 +128,17 @@
             android:elevation="16dp" />
 
         <TextView
-            android:id="@+id/weight_up"
+            android:id="@+id/edulevel_dp"
             android:layout_width="123dp"
             android:layout_height="32dp"
             android:layout_marginLeft="33dp"
             android:layout_marginTop="20dp"
             android:gravity="center_horizontal|left"
-            android:text="@string/weight"
+            android:text="Education level"
             android:textAppearance="@style/name" />
 
         <EditText
-            android:id="@+id/weight_up_edittext"
+            android:id="@+id/edulevel_dp_edittext"
             android:layout_width="259dp"
             android:layout_height="60dp"
             android:layout_marginLeft="33dp"
@@ -128,17 +147,17 @@
             android:elevation="16dp" />
 
         <TextView
-            android:id="@+id/height_up"
+            android:id="@+id/time_dp"
             android:layout_width="123dp"
             android:layout_height="32dp"
             android:layout_marginLeft="33dp"
             android:layout_marginTop="20dp"
             android:gravity="center_horizontal|left"
-            android:text="@string/height"
+            android:text="Timings"
             android:textAppearance="@style/name" />
 
         <EditText
-            android:id="@+id/height_up_edittext"
+            android:id="@+id/time_dp_edittext"
             android:layout_width="259dp"
             android:layout_height="60dp"
             android:layout_marginLeft="33dp"
@@ -147,13 +166,13 @@
             android:elevation="16dp" />
 
         <Button
-            android:id="@+id/save_button"
+            android:id="@+id/save_du_button"
             android:layout_width="140dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginTop="25dp"
             android:text="Save"
-            android:background="@drawable/button_round"
             android:textAlignment="center" />
     </LinearLayout>
+
 </ScrollView>

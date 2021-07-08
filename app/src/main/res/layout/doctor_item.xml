@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="#393E46"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time:"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="#00ADB5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="time123"
+            android:textColor="#BFD7E2"
+            android:textSize="28sp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/time_ap"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient 1:"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="#00ADB5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient"
+            android:textColor="#BFD7E2"
+            android:textSize="28sp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/p_1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient 2 : "
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="#00ADB5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number"
+            android:textColor="#BFD7E2"
+            android:textSize="28sp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/p_2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient 3 : "
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="#00ADB5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textColor="#BFD7E2"
+            android:textSize="28sp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/p_3"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient 4 :"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="#00ADB5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textColor="#BFD7E2"
+            android:textSize="28sp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/p_4"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient 5 :"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="#00ADB5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient 5"
+            android:textColor="#BFD7E2"
+            android:textSize="28sp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/p_5"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

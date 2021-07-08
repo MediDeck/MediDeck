@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="#222831">
 
+
     <TextView
         android:id="@+id/get_on_boar"
         android:layout_width="240dp"
@@ -19,173 +20,238 @@
         app:layout_constraintHorizontal_bias="0.906"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
+        app:layout_constraintVertical_bias="0.045" />
 
     <ImageView
         android:id="@id/getin_logo"
-        android:layout_width="150dp"
-        android:layout_height="167dp"
-        android:layout_marginBottom="556dp"
+        android:layout_width="149dp"
+        android:layout_height="151dp"
+        android:layout_marginBottom="576dp"
 
         android:src="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintHorizontal_bias="0.022"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/name_si"
         android:layout_width="132dp"
-        android:layout_height="65dp"
+        android:layout_height="55dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="180dp"
         android:layout_marginEnd="7dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="10dp"
         android:gravity="center"
         android:text="@string/name"
         android:textAppearance="@style/name_si"
         app:layout_constraintBottom_toTopOf="@+id/number_si"
         app:layout_constraintEnd_toStartOf="@+id/name_si_edittext"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/name_si_edittext"
         android:layout_width="240dp"
-        android:layout_height="65dp"
+        android:layout_height="55dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="15dp"
-        android:textColor="@color/white"
-        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/input_profile_draw"
         android:elevation="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/number_si_edittext"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/number_si"
         android:layout_width="132dp"
-        android:layout_height="65dp"
+        android:layout_height="55dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="7dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="10dp"
         android:gravity="center"
         android:text="@string/number"
         android:textAppearance="@style/name_si"
         app:layout_constraintBottom_toTopOf="@+id/age_si"
         app:layout_constraintEnd_toStartOf="@+id/number_si_edittext"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/number_si_edittext"
         android:layout_width="240dp"
-        android:layout_height="65dp"
+        android:layout_height="55dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="15dp"
-        android:textColor="@color/white"
-        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/input_profile_draw"
         android:elevation="16dp"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/age_si_edittext"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/age_si"
         android:layout_width="132dp"
-        android:layout_height="65dp"
+        android:layout_height="55dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="7dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="10dp"
         android:gravity="center"
         android:text="@string/age"
         android:textAppearance="@style/name_si"
-        app:layout_constraintBottom_toTopOf="@+id/email_si"
+        app:layout_constraintBottom_toTopOf="@+id/city_si"
         app:layout_constraintEnd_toStartOf="@+id/age_si_edittext"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
 
     <EditText
         android:id="@+id/age_si_edittext"
         android:layout_width="240dp"
-        android:layout_height="65dp"
+        android:layout_height="55dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="15dp"
-        android:textColor="@color/white"
-        android:textAlignment="center"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/input_profile_draw"
         android:elevation="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/email_si_edittext"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/city_si_edittext"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <TextView
+        android:id="@+id/city_si"
+        android:layout_width="132dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/city"
+        android:textAppearance="@style/name_si"
+        app:layout_constraintBottom_toTopOf="@+id/email_si"
+        app:layout_constraintEnd_toStartOf="@+id/password_si_edittext"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/city_si_edittext"
+        android:layout_width="240dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/input_profile_draw"
+        android:elevation="16dp"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/email_si_edittext"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/email_si"
         android:layout_width="132dp"
-        android:layout_height="65dp"
+        android:layout_height="55dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="7dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="8dp"
         android:gravity="center"
         android:text="@string/email"
         android:textAppearance="@style/name_si"
         app:layout_constraintBottom_toTopOf="@+id/password_si"
         app:layout_constraintEnd_toStartOf="@+id/email_si_edittext"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/email_si_edittext"
         android:layout_width="240dp"
-        android:layout_height="65dp"
+        android:layout_height="55dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="15dp"
-        android:textColor="@color/white"
-        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/input_profile_draw"
         android:elevation="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/password_si_edittext"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/password_si"
         android:layout_width="132dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="16dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="7dp"
-        android:layout_marginBottom="156dp"
+        android:layout_marginBottom="20dp"
         android:gravity="center"
         android:text="@string/password"
         android:textAppearance="@style/name_si"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
         app:layout_constraintEnd_toStartOf="@+id/password_si_edittext"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/password_si_edittext"
         android:layout_width="240dp"
-        android:layout_height="65dp"
+        android:layout_height="55dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="156dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/input_profile_draw"
         android:elevation="16dp"
         android:inputType="textPassword"
         android:textAlignment="center"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="320dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/signup_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/doctor_radio"
+            android:layout_width="159dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:buttonTint="#393E46"
+            android:text=" Doctor"
+            android:textColor="#00ADB5"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/patient_radio"
+            android:layout_width="159dp"
+            android:layout_height="45dp"
+            android:buttonTint="#393E46"
+            android:text=" Patient"
+            android:textColor="#00ADB5"
+            android:textSize="30sp" />
+
+    </RadioGroup>
 
     <Button
         android:id="@+id/signup_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/button_round"
         android:text="Next"
         android:textColor="#ffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.479"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.906" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/Doc_Home_page"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".doctor_home"
     android:background="#222831"
     android:backgroundTint="#222831">
 
@@ -12,29 +12,33 @@
         android:id="@+id/Doctor_H_Profile"
         android:layout_width="110dp"
         android:layout_height="115dp"
+        android:layout_marginStart="76dp"
         android:layout_marginBottom="204dp"
         android:background="@drawable/button_background"
         android:src="@drawable/icon1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Doctor_H_Doc"
-        app:layout_constraintHorizontal_bias="0.603"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Doc_search_bar"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
         android:id="@+id/Doctor_H_Doc"
         android:layout_width="110dp"
         android:layout_height="115dp"
+        android:layout_marginEnd="88dp"
         android:layout_marginBottom="204dp"
         android:background="@drawable/button_background"
-        android:src="@drawable/icon2"
+        android:src="@drawable/finaldocicon2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.767"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Doc_search_bar"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/Doc_search_bar"
-        android:layout_width="271dp"
+        android:layout_width="390dp"
         android:layout_height="53dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -66,4 +70,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.118" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

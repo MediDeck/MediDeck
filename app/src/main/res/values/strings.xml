@@ -5,7 +5,7 @@
     <string name="Doc_intro">Hello Doctor,
         Welcome back!</string>
     <string name="Search">Search Bar</string>
-    <string name="user_name">User Name</string>
+    <string name="user_name">Email Id</string>
     <string name="name">Name</string>
     <string name="age">Age</string>
     <string name="number">Number</string>
@@ -23,6 +23,6 @@
     <string name="laboratorie">Laboratories  with Covid-19
         testing facility</string>
     <string name="what_do_you">What do you need?</string>
-    <string name="timeline">Time Line</string>
+    <string name="city">City</string>
 
 </resources>
