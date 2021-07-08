@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MediDeck">
+        <activity android:name=".search_result"></activity>
         <activity android:name=".doc_appointments" />
         <activity android:name=".doctor_booking" />
         <activity android:name=".doc_profile" />

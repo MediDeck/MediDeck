@@ -30,7 +30,6 @@ public class appointment_book extends AppCompatActivity {
     MyAdapter ap;
     ArrayList<User> list;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +41,7 @@ public class appointment_book extends AppCompatActivity {
         recview.setLayoutManager(new LinearLayoutManager(this));
 
         list = new ArrayList<User>();
-        ap = new MyAdapter(this, list );
+        ap = new MyAdapter(this,list);
         recview.setAdapter(ap);
 
 
@@ -55,6 +54,7 @@ public class appointment_book extends AppCompatActivity {
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
 
                     User md = dataSnapshot.getValue(User.class);
+
                     list.add(md);
 
 
