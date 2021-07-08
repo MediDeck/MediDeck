@@ -13,12 +13,19 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="275dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/profile_pic" />
+
         <TextView
             android:id="@+id/name_up"
             android:layout_width="123dp"
             android:layout_height="32dp"
             android:layout_marginLeft="33dp"
-            android:layout_marginTop="277dp"
+            android:layout_marginTop="25dp"
             android:gravity="center_horizontal|left"
             android:text="@string/name"
             android:textAppearance="@style/name" />
@@ -29,6 +36,8 @@
             android:layout_height="60dp"
             android:layout_marginLeft="33dp"
             android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:textColor="#ffff"
             android:background="@drawable/input_profile_draw"
             android:elevation="16dp" />
 
@@ -48,6 +57,8 @@
             android:layout_height="60dp"
             android:layout_marginLeft="33dp"
             android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:textColor="#ffff"
             android:background="@drawable/input_profile_draw"
             android:elevation="16dp" />
 
@@ -67,6 +78,8 @@
             android:layout_height="60dp"
             android:layout_marginLeft="33dp"
             android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:textColor="#ffff"
             android:background="@drawable/input_profile_draw"
             android:elevation="16dp" />
 
@@ -86,6 +99,8 @@
             android:layout_height="60dp"
             android:layout_marginLeft="33dp"
             android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:textColor="#ffff"
             android:background="@drawable/input_profile_draw"
             android:elevation="16dp" />
 
@@ -105,6 +120,8 @@
             android:layout_height="60dp"
             android:layout_marginLeft="33dp"
             android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:textColor="#ffff"
             android:background="@drawable/input_profile_draw"
             android:elevation="16dp" />
 
@@ -124,6 +141,8 @@
             android:layout_height="60dp"
             android:layout_marginLeft="33dp"
             android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:textColor="#ffff"
             android:background="@drawable/input_profile_draw"
             android:elevation="16dp" />
 
@@ -143,6 +162,8 @@
             android:layout_height="60dp"
             android:layout_marginLeft="33dp"
             android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:textColor="#ffff"
             android:background="@drawable/input_profile_draw"
             android:elevation="16dp" />
 
